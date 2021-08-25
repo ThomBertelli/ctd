@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Roboto&display=swap');
+
+body {
+    background-color: black;
+}
+h1{
+    font-family: 'Nunito', sans-serif;
+    font-size: 28px;
+    color: white;    
+}
+
+.media-picture{
+    background-image: url('https://img.elo7.com.br/product/zoom/25E7D5A/big-poster-filme-vingadores-ultimato-lo002-tamanho-90x60-cm-poster-cinema.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    height:400px;
+}
+
+.review-score{
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(214, 169, 21);
+    font-size: 15px;
+    padding: 8px;
+    color: white;
+}
+
+h2{
+    font-family: 'Roboto', sans-serif;
+    color: steelblue;
+}
+
+p{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+a{
+    font-family: 'Nunito', sans-serif;
+    color: rgb(214, 169, 21);
+}
