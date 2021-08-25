@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.titulo-principal{
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    color:rgba(47, 17, 61, 0.568);
+
+}
+
+div{
+    height: 200px;
+    background-image: url('https://www.estudarfora.org.br/app/uploads/2018/07/interc%C3%A2mbio-de-idiomas-na-Irlanda-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
