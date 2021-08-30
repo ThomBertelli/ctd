@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microondas</title>
+</head>
+<!--Olá, você foi contratado para executar este projeto. É importante que você analise, entenda o pedido do cliente e desenvolva conforme solicitado. Veja abaixo os requisitos do projeto:
+
+- Precisamos desenvolver um menu para um microondas super veloz, onde teremos 5 opções de comida com seus respectivos tempos pré-definidos. 
+
+      1 - Pipoca – 10 segundos (padrão);
+      2 - Macarrão – 8 segundos (padrão);
+      3 - Carne – 15 segundos (padrão);
+      4 - Feijão – 12 segundos (padrão);
+      5 - Brigadeiro – 8 segundos (padrão); 
+
+- O usuário poderá alterar o tempo padrão, aumentando ou diminuindo de acordo com sua vontade. Se o tempo informado for maior que 2x o necessário, exibir mensagem que a comida queimou.
+- Se o tempo for menor que o padrão, exibir a mensagem: "tempo insuficiente"; 
+- Opções não listadas no menu, devem exibir uma mensagem de erro: "Prato inexistente";
+- Se o tempo for 3x maior que o necessário para o prato, o microondas deve exibir a mensagem: “kabumm”;
+- No final de cada tarefa, o microondas deverá exibir a mensagem: "Prato pronto, bom apetite!!!".-->
+<body>
+    <script>        
+        var numeroDysplay = null;
+        var tempoPipoca = 10;
+        var tempoMacarao = 8;
+        var tempoCarne = 15;
+        var tempoFeijao = 12;
+        var tempoBrigadeiro = 8;
+
+        function padrao(){
+            document.getElementById('display').innerHTML = "Escolha uma Função";
+            numeroDysplay = 0;
+            tempoPipoca = 10;
+            tempoMacarao = 8;
+            tempoCarne = 15;
+            tempoFeijao = 12;
+            tempoBrigadeiro = 8;
+        }   
+        
+        function pipoca(){            
+            document.getElementById('display').innerHTML = `Pipoca ${tempoPipoca} segundos`;
+        }
+
+        function macarao(){            
+            document.getElementById('display').innerHTML = `Macarrão ${tempoMacarao} segundos`;
+        }
+
+        function carne(){            
+            document.getElementById('display').innerHTML = `Carne ${tempoCarne} segundos`;
+        }
+
+        function feijao(){            
+            document.getElementById('display').innerHTML = `Feijão ${tempoFeijao} segundos`;
+        }
+
+        function brigadeiro(){            
+            document.getElementById('display').innerHTML = `Brigadeiro ${tempoBrigadeiro} segundos`;
+        }
+        
+       function um(){
+        document.getElementById('display').innerHTML = 1;
+        numeroDysplay = 1;
+       }
+
+       function dois(){
+        document.getElementById('display').innerHTML = 2;
+        numeroDysplay = 2;
+       }
+
+       function tres(){
+        document.getElementById('display').innerHTML = 3;
+        numeroDysplay = 3;
+       }
+
+       function quatro(){
+        document.getElementById('display').innerHTML = 4;
+        numeroDysplay = 4;
+       }
+
+       function cinco(){
+        document.getElementById('display').innerHTML = 5;
+        numeroDysplay = 5;
+       }
+
+       function seis(){
+        document.getElementById('display').innerHTML = 6;
+        numeroDysplay = 6;
+       }
+
+       function sete(){
+        document.getElementById('display').innerHTML = 7;
+        numeroDysplay = 7;
+       }
+
+       function oito(){
+        document.getElementById('display').innerHTML = 8;
+        numeroDysplay = 8;
+       }
+
+       function nove(){
+        document.getElementById('display').innerHTML = 9;
+        numeroDysplay = 9;
+       }
+       function zero(){
+        document.getElementById('display').innerHTML = 0;
+        numeroDysplay += 10;
+       }
+
+       function maisTempo(){
+            if(numeroDysplay === 1){
+                tempoPipoca++
+                document.getElementById('display').innerHTML = tempoPipoca;
+            }else if(numeroDysplay === 2){
+                tempoMacarao++
+                document.getElementById('display').innerHTML = tempoMacarao;
+            }else if(numeroDysplay === 3){
+                tempoCarne++
+                document.getElementById('display').innerHTML = tempoCarne;
+            }else if(numeroDysplay === 4){
+                tempoFeijao++
+                document.getElementById('display').innerHTML = tempoFeijao;
+            }else if(numeroDysplay === 5){
+                tempoBrigadeiro++
+                document.getElementById('display').innerHTML = tempoBrigadeiro;
+            }else{null}        
+       }
+
+       function menosTempo(){
+        if(numeroDysplay === 1){
+                tempoPipoca--
+                document.getElementById('display').innerHTML = tempoPipoca;
+            }else if(numeroDysplay === 2){
+                tempoMacarao--
+                document.getElementById('display').innerHTML = tempoMacarao;
+            }else if(numeroDysplay === 3){
+                tempoCarne--
+                document.getElementById('display').innerHTML = tempoCarne;
+            }else if(numeroDysplay === 4){
+                tempoFeijao--
+                document.getElementById('display').innerHTML = tempoFeijao;
+            }else if(numeroDysplay === 5){
+                tempoBrigadeiro--
+                document.getElementById('display').innerHTML = tempoBrigadeiro;
+            }else{null}    
+       }
+
+
+
+        function enter(){
+            if (numeroDysplay == 1 ){
+                pipoca()
+            }else if(numeroDysplay == 2){
+                macarao()  
+            }else if(numeroDysplay == 3){
+                carne()
+            }else if(numeroDysplay == 4){
+                feijao()
+            }else if(numeroDysplay == 5){
+                brigadeiro()
+            }else{document.getElementById('display').innerHTML = "Prato Inexistente";
+            }
+        }
+
+        function bomApetite(){
+            alert("Prato pronto, bom apetite!!!");
+            padrao();
+        }
+
+        function queimou(){
+            alert("Comida queimou!");
+            padrao();
+        }
+
+        function cru(){
+            alert("Tempo insuficiente!");
+            padrao();
+        }
+        function kabum(){
+            alert("Kabummmmmmmmmmmmmmmmm!!!!!!!!");
+            padrao();
+        }
+
+        function iniciar(){
+            if (numeroDysplay === 1){
+                if (tempoPipoca >=10 && tempoPipoca <=20){
+                    bomApetite()
+                }else if(tempoPipoca < 10){
+                    cru()
+                }else if(tempoPipoca > 20 && tempoPipoca <=29){
+                    queimou()
+                }else{kabum()}      
+            }else if (numeroDysplay === 2){
+                if (tempoMacarao >=8 && tempoMacarao <=16){
+                    bomApetite()
+                }else if(tempoMacarao < 8){
+                    cru()
+                }else if(tempoMacarao > 16 && tempoMacarao <=24){
+                    queimou()
+                }else{kabum()}      
+            }else if (numeroDysplay === 3){
+                if (tempoCarne >=15 && tempoCarne <=30){
+                    bomApetite()
+                }else if(tempoCarne < 15){
+                    cru()
+                }else if(tempoCarne > 30 && tempoCarne <= 45){
+                    queimou()
+                }else{kabum()}      
+            }else if (numeroDysplay === 4){
+                if (tempoFeijao >=12 && tempoFeijao <=24){
+                    bomApetite()
+                }else if(tempoFeijao < 12){
+                    cru()
+                }else if(tempoFeijao > 24 && tempoFeijao <=36){
+                    queimou()
+                }else{kabum()}      
+            }else if (numeroDysplay === 5){
+                if (tempoBrigadeiro >=8 && tempoBrigadeiro <=16){
+                    bomApetite()
+                }else if(tempoBrigadeiro < 8){
+                    cru()
+                }else if(tempoBrigadeiro > 16 && tempoBrigadeiro <=24){
+                    queimou()
+                }else{kabum()}
+            }else{null}
+        }
+
+    </script>
+
+    <style>
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            font-size: 22px;
+        }
+        #display{
+            
+            border: solid 2px;
+            width: 400px;
+            font-size: 33px;
+            text-align: center;
+        }
+        .botoesNumericos{
+          width: 140px;  
+        }
+
+        button{
+            font-size: 30px;
+            height: 40px;
+        }
+
+        .nulo{
+            color: transparent;
+        }
+        .confirma{
+            background-color: rgb(21, 112, 56);
+        }
+        .cancela{
+            background-color: tomato;
+        }
+        .inicia{
+            background-color: rgb(50, 50, 199);
+        }  
+    </style>
+
+    <main>
+        <div>
+        <h1> Microondas Mais Rápido do Mundo</h1>
+
+        <h2> Funções:</h2>
+        <ol>
+            <li>Pipoca</li>
+            <li>Macarão</li>
+            <li>Carne</li>
+            <li>Feijão</li>
+            <li>Brigadeiro</li>            
+        </ol>
+        <p id="display">Escolha uma Função</p>
+        </div>  
+        
+        <div class="botoesNumericos">
+            <button onclick="um()" type="button"> 1 </button>
+            <button onclick="dois()" type="button"> 2 </button>
+            <button onclick="tres()" type="button"> 3 </button>
+            <button onclick="quatro()" type="button"> 4 </button>
+            <button onclick="cinco()" type="button"> 5 </button>
+            <button onclick="seis()" type="button"> 6 </button>
+            <button onclick="sete()" type="button"> 7 </button>
+            <button onclick="oito()" type="button"> 8 </button>
+            <button onclick="nove()" type="button"> 9 </button>
+            <button class="nulo" type="button"> 0 </button>
+            <button onclick="zero()" type="button"> 0 </button>
+            <button class="nulo"type="button">  0</button>
+            </br></br>
+            </div>
+            <button onclick="maisTempo()" type="button"> + Tempo </button>
+            <button onclick="menosTempo()" type="button"> - Tempo </button>
+            </div>
+            </br></br>
+            <div>
+            <button class="confirma" onclick="enter()" type="button"> Confirmar </button>
+            <button class="cancela"onclick="padrao()" type="button"> Cancelar </button>
+            </div>
+            </br>
+            <div>                
+            <button class ="inicia" onclick="iniciar()" type="button"> Iniciar Preparo </button>
+        </div>      
+    </main>
+    
+</body>
+</html>
