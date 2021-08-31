@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
+
+*{
+    box-sizing: border-box; 
+}
+body{
+
+    font-family: 'Hina Mincho', serif;
+    text-align: center;
+}
+.banner{  
+  
+    height: 480px; 
+    background-image: url(https://gooutside.com.br/wp-content/uploads/sites/3/2019/07/video-com-belas-imagens-do-festival-de-balonismo-da-serra-da-canastra.jpg);
+    background-size: cover;
+    padding: 110px 0px ;
+
+}
+
+button{
+    font-family: 'Hina Mincho', serif;
+    width: 250px;
+    height: 60px;
+    font-size: 30px;
+    padding: 2px;
+    border-radius:5px 45px; 
+    background-color: rgb(128, 98, 226);
+    border:none; 
+}
