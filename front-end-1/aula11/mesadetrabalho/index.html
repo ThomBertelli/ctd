@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho Aula 10</title>
+    <!--Mesa de Trabalho
+    Objetivo
+    O objetivo desse desafio é adquirir total domínio dos posicionamentos.
+    Instruções
+    1. As caixas devem ficar distribuídas como no exemplo no final desse
+    documento, 2 em cada extremidade e uma ao centro.
+    2. Todas as caixas devem ter um texto dentro.
+    3. As caixas devem ter uma outra dentro bem ao centro.
+    4. Quando houver o scroll do mouse, a caixa que está no centro da tela, deverá
+    ficar fixada no mesmo lugar com o posicionamento fixo.-->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            height: 1500px;
+        }
+
+        .caixaEsquerdaMaior{
+            height: 300px;
+            width: 300px;
+            background-color: rebeccapurple;
+
+        }
+        .caixaEsquerdaMenor{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(161, 102, 219);
+            position: relative;
+            top:70px;
+            left:70px;
+
+        }
+        .caixaCentroMaior{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(51, 61, 153);
+            position: fixed;
+            left: 45%;
+            bottom: 0%;
+
+        }
+
+        .caixaCentroMenor{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(99, 110, 207);
+            position: relative;
+            top:70px;
+            left: 70px;
+        }
+
+        .caixaDireitaMaior{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(21, 180, 74);
+            position:absolute;
+            top: 0%;
+            right: 0%;            
+
+        }
+
+        .caixaDireiraMenor{
+            height: 150px;
+            width: 150px;
+            background-color: rgb(90, 200, 127);
+            position: relative;
+            top:70px;
+            left:80px;            
+        }
+
+        p{
+            text-align: center;
+            padding-top:62px
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="caixaEsquerdaMaior">
+        <div class="caixaEsquerdaMenor">
+            <p>Caixa Esquerda</p>
+        </div>
+    </div>
+
+    <div class="caixaCentroMaior" >
+        <div class="caixaCentroMenor">
+            <p>Caixa Centro</p>
+        </div>
+    </div>
+
+    <div class="caixaDireitaMaior">
+        <div class="caixaDireiraMenor"> 
+            <p>Caixa Direita</p>
+        </div>
+    </div>
+    
+</body>
+</html>
