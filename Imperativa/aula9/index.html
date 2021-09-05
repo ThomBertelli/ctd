@@ -17,6 +17,14 @@
             Observação: Utilize map para ter acesso a todos os itens da variável e utilize a formula com base na formula (0 °C × 9/5) + 32 = 32 °F.
         */
         var valoresEmFahrenheits = [0, 32, 45, 50, 75, 80, 120];
+        var valoresEmCelsius = valoresEmFahrenheits.map(converteEmCelsius)
+
+        function converteEmCelsius(num){
+           return (num - 32) * (5/9);
+
+        }
+        console.log(valoresEmCelsius)
+        
 
         /*
             Filtre nomes com menos de cinco letras - Nível II
@@ -25,6 +33,13 @@
             Observação: Utilize filter para ter acesso a todos os itens da variável – Necesse caso eu não vou dá nenhuma pista kkk.
         */
         var listaDeNomes = ['Salomão', 'Angela', 'Dayane', 'Willian', 'Ana', 'Paulo', 'Junior', 'Edu', 'Caio', 'Joe', 'Ivo', 'Ivan'];
+        var nomesMenosDeCinco= listaDeNomes.filter(filtraMenosCinco);
+
+        function filtraMenosCinco(nome){
+            return nome.length < 5;
+        }
+        console.log (nomesMenosDeCinco);
+
 
         /*
             Remova números duplicados e filtre todos os números pares - Nível III (Cereja do bolo)
@@ -36,7 +51,20 @@
 
         */
         var valoresDuplicados = [2, 3, 4, 5, 4, 12, 19, 7, 2, 4, 10, 25, 50, 3, 5];
+        var semRepeticao = valoresDuplicados.filter(retiraDuplicado);
+        var parSemRepeticao = semRepeticao.filter(par);
 
+        function retiraDuplicado(num, index){
+            return valoresDuplicados.indexOf(num) == index;
+        }
+
+        function par(num){
+            return num % 2 == 0;
+        }
+
+        console.log(parSemRepeticao) 
+        
+     
     </script>
 </body>
 </html>
