@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 13</title>
+    <style>
+        img {
+            width:200px;
+        }
+
+        fieldset{
+            width:400px;
+            color:blueviolet;
+            ;
+        }
+
+    </style>
+</head>
+<body>
+    <form>
+        <img src="https://www.datocms-assets.com/39397/1614171395-open-graph-logo-large-br.png">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>  
+
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" maxlength="10" id="nome" name="nome" placeholder="Digite seu nome">  
+            </div>
+            
+            <div>
+                <label for="socialNumber">CPF</label>
+                <input type="text" id="socialNumber" name="socialNumber" placeholder="Sem traços e/ou pontos">
+            </div>
+            
+            <div>
+                <label for="nascimento">Data de Nascimento</label>
+                <input type="date" id="nascimento" name="nascimento">
+            </div>   
+            <div>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="Coloque seu e-mail">
+            </div>
+            
+            <div>
+                <label for="password">Senha</label>
+                <input type="password" id="password" name="password" placeholder="Cria uma senha forte"> 
+            </div>
+                  
+            <div>
+                <label for="passwordConfirm">Confirmação Senha</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" placeholder="Cofirme a senha">
+            </div>  
+
+            <div>
+                <input type="checkbox"checked id="person">
+                <label for="person">Pessoa Física </label>
+
+                <input type="radio" name="option" id="option1">
+                <label for ="option1">Pessoa Física</label>
+
+                <input type="radio" name="option" id="option2">
+                <label for ="option2">Pessoa Jurídica</label>
+             </div>
+        </fieldset>
+
+        
+        <fieldset>
+            <legend>Localização</legend>
+
+            <div>
+                <label for="city">Cidade</label>
+                <input list ="cities" name="city" id="city">
+                <datalist id="cities">
+                    <option value="São Paulo">
+                    <option value="São Bernardo do Campo">
+                    <option value="São Roque">
+                    <option value="Joinville">
+                    <option value="Blumenau">           
+                </datalist>
+            </div>
+
+            <div>
+                <label for="states">Estado</label>
+                <select nome="state" id="state">
+                    <optgroup label="Sul">
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Paraná">Paraná</option>
+                    </optgroup>
+
+                    <optgroup label ="Norte">
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Rorraima">Rorraima</option>
+                        <option value="Acre">Acre</option>                                                
+                    </optgroup>
+                
+                
+                </select>
+            </div>       
+               
+            <div>
+                <label for="comments">Comentários/Observações</label>
+                <textarea name="comments" id="" cols="30" rows="10" ></textarea>
+            </div>
+        </fieldset>
+        
+        <div>
+            <button type="submit">Salvar</button>
+            <button type="reset">Limpar</button>
+            <input type="submit" value="Enviar Formulário">
+        </div>       
+
+    </form>
+</body>
+</html>
