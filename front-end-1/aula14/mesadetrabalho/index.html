@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho - Aula 14</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Doces & Cia.</h1>
+    <form>
+        <fieldset class="pedido">
+            <legend>Pedido</legend>
+            <div>
+                <label for="tradicional">Doces Brasileiros</label>
+                <input list ="tradicionais" name="tradicional" id="tradicional">
+                <datalist id="tradicionais">
+                    <option value="Brigadeiro">
+                    <option value="Beijinho">
+                    <option value="Dois Amores">
+                    <option value="Sonho">
+                    <option value="Pé de Moleque">
+                    <option value="Quindim">
+                    <option value="Pudim"> 
+                    <option value="Paçoca">
+                    <option value="Pudim"> 
+                    <option value="Rapadura"> 
+                    <option value="Romeu e Julieta">         
+                    <option value="Pedacinho do Céu">    
+                </datalist>
+                <label for="qtdadestradicionais">Quantidade</label>
+                <input type="number" name="qtdadestradicionais" id="qtdadestradicionais">                
+                <button type="submit">Adicionar ao Carrinho</button>
+            </div>
+
+            <div>
+                <label for="internacional">Doces Internacionais</label>
+                <input list ="internacionais" name="internacional" id="internacional">
+                <datalist id="internacionais">
+                    <option value="Cheesecake ">
+                    <option value="Macaron">
+                    <option value="Baklava">
+                    <option value="Crème Brûlée">
+                    <option value="Pé de Moleque">
+                    <option value="Alfajores">
+                    <option value="Tiramusú"> 
+                    <option value="Cannoli">
+                    <option value="Trdelník"> 
+                    <option value="Cinammon rolls"> 
+                    <option value="Gulab Jamun">         
+                    <option value="Stroopwafel">    
+                </datalist>
+                <label for="qtdinterncionais">Quantidade</label>
+                <input type="number" name="qtdinterncionais" id="qtdinterncionais">
+                <button type="submit">Adicionar ao Carrinho</button>
+            </div>
+            <div>
+                <fieldset class="subfieldset">
+                    <legend>Bolos Recheados</legend>
+                    <fieldset>
+                        <legend class="sublegend">Tamanho</legend>
+                        <div>        
+                            <input type="radio" name="option" id="option1">
+                            <label for ="option1">Pequeno- 1kg</label>
+            
+                            <input type="radio" name="option" id="option2">
+                            <label for ="option2">Médio - 2,5kg</label>
+
+                            <input type="radio" name="option" id="option2">
+                            <label for ="option2">Grande - 4kg</label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="sublegend">Cobertura</legend>
+                        <div>    
+                            <input type="radio" name="cobertura" id="cobertura1">
+                            <label for ="cobertura1">Leite Ninho</label>
+            
+                            <input type="radio" name="cobertura" id="cobertura2">
+                            <label for ="cobertura2">Chantilly</label>
+
+                            <input type="radio" name="cobertura" id="cobertura3">
+                            <label for ="cobertura3">Glacê</label>
+
+                            <input type="radio" name="cobertura" id="cobertura4">
+                            <label for ="cobertura4">Chocolate</label>
+
+                            <input type="radio" name="cobertura" id="cobertura5">
+                            <label for ="cobertura5">Chocolete Branco</label>
+
+                            <input type="radio" name="cobertura" id="cobertura6">
+                            <label for ="cobertura6">Coco</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="massas">
+                        <legend class="sublegend">Massas</legend>
+                        <div>
+                            <label for="massa1">1º Massa</label>
+                            <input list ="massas1" name="massa1" id="massa1">
+                            <datalist id="massas1">
+                                <option value="Chocolate ">
+                                <option value="Baunilha">
+                                <option value="Red Velvet">
+                                <option value="Coca-Cola">
+                                <option value="Branca">                      
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <label for="massa2">2º Massa</label>
+                            <input list ="massas2" name="massa2" id="massa2">
+                            <datalist id="massas2">
+                                <option value="Chocolate ">
+                                <option value="Baunilha">
+                                <option value="Red Velvet">
+                                <option value="Coca-Cola">
+                                <option value="Branca">                      
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <label for="massa3">3º Massa</label>
+                            <input list ="massas3" name="massa3" id="massa3">
+                            <datalist id="massas3">
+                                <option value="Chocolate ">
+                                <option value="Baunilha">
+                                <option value="Red Velvet">
+                                <option value="Coca-Cola">
+                                <option value="Branca">                      
+                            </datalist>
+                        </div>
+                        
+                    </fieldset>
+
+                    <fieldset class="recheio">
+                        <legend class="sublegend">Recheios</legend>
+                        <div>
+                            <label for="recheio1">1º Recheio</label>
+                            <input list ="recheios1" name="recheio1" id="recheio1">
+                            <datalist id="recheios1">
+                                <option value="Chocolate ">
+                                <option value="Chocolate Branco">
+                                <option value="Beijinho">
+                                <option value="Morangos">
+                                <option value="Pessego">
+                                <option value="Sonho de Valsa">
+                                <option value="Nutela">         
+                            </datalist>
+                        </div>
+
+                        <div>
+                            <label for="recheio2">2º Recheio</label>
+                            <input list ="recheios2" name="recheio2" id="recheio2">
+                            <datalist id="recheios2">
+                                <option value="Chocolate ">
+                                <option value="Chocolate Branco">
+                                <option value="Beijinho">
+                                <option value="Morangos">
+                                <option value="Pessego">
+                                <option value="Sonho de Valsa">
+                                <option value="Nutela">         
+                            </datalist>
+                        </div>
+
+                    </fieldset>
+                    <div>
+                        <button class="buttonbolo" type="submit">Adicionar ao Carrinho</button>
+                    </div>
+                </fieldset>
+            </div>
+        </fieldset>
+    
+        <fieldset class="pagamento">
+            <legend>Pagamento</legend>
+             <div>    
+                <input type="radio" name="pagamento" id="debito">
+                <label for ="debito">Cartão de Débito</label>
+
+                <input type="radio" name="pagamento" id="credito">
+                <label for ="credito">Cartão de Crédito</label>
+            
+                <input type="radio" name="pagamento" id="PIX">
+                <label for ="PIX">PIX</label>
+            </div>
+
+            <div>
+                <label for="nome">Nome</label>
+                <input type="text" maxlength="30" id="nome" name="nome" placeholder="Conforme impresso no cartão">  
+            </div>
+        
+            <div>
+                <label for="socialNumber">CPF</label>
+                <input type="text" id="socialNumber" name="socialNumber" placeholder="Sem traços e/ou pontos">
+            </div>
+        
+            <div>
+                <label for="vencimento">Data de Vencimento</label>
+                <input type="date" id="vencimento" name="vencimento">
+            </div>   
+            <div>
+                <label for="codigo">Código de Segurança</label>
+                <input type="text" id="codigo" name="codigo" placeholder="CVC">
+            </div>
+
+            <img class="qrcode" src="https://www.canalautismo.com.br/wp-content/uploads/2018/05/qrcode-RevistaAutismo.png">
+            <label class="labelimg" >Doces & Cia CNPJ 0000000001-45</label>
+            <div class="buttonpagamento">
+                <button  type="submit">Pagar</button>
+                <button type="reset">Limpar</button>
+           </div>
+        </fieldset>
+
+        <fieldset class="entrega" >
+            <legend>Entrega</legend>
+            
+            <div>
+                <label for="recebedor">Recebedor</label>
+                <input type="text" id="recebedor" name="recebedor" placeholder="Digite o nome do recebedor">  
+            </div>
+
+            <div>
+                <label for="address">Endereço</label>
+                <input type="text" id="address" name="address" placeholder="Logradouro/Rua/Avenida"> 
+                <label for="numero">Número</label>
+                <input type="text" id="numero" name="numero" placeholder="Número/Quadra/Lote">
+            </div>
+            
+            <div>
+                <labe for="complemento">Complemento</labe>
+                <input type="text" id="complemento" name="complemento" placeholder="Apartamento/Bloco">
+            </div>            
+
+            <div>
+                <label for="states">Estado</label>
+                <select nome="state" id="state">
+                    <optgroup label="Sul">
+                        <option value="Santa Catarina">Santa Catarina</option>
+                        <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                        <option value="Paraná">Paraná</option>
+                    </optgroup>
+
+                    <optgroup label ="Norte">
+                        <option value="Amazonas">Amazonas</option>
+                        <option value="Rondônia">Rondônia</option>
+                        <option value="Rorraima">Rorraima</option>
+                        <option value="Acre">Acre</option>                                     
+                    </optgroup>            
+                </select>
+            </div>
+            
+            <div>
+                <label for="city">Cidade</label>
+                <input list ="cities" name="city" id="city">
+                <datalist id="cities">
+                    <option value="São Paulo">
+                    <option value="São Bernardo do Campo">
+                    <option value="São Roque">
+                    <option value="Joinville">
+                    <option value="Blumenau">           
+                </datalist>
+            </div>
+        
+            <div>
+                 <button type="submit">Salvar</button>
+                <button type="reset">Limpar</button>
+            </div>
+
+        </fieldset>
+    </form>
+    
+</body>
+</html>

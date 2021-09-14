@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital@1&display=swap');
+
+
+
+
+body{
+    font-family: 'Bona Nova', serif;
+    background-image: url("https://thumbs.dreamstime.com/b/cute-abstract-cupcake-background-pink-color-seamless-pattern-137406097.jpg");
+    font-size: 20px;
+    font-weight: 500; 
+    color:rgb(233, 131, 228);
+    width: 1000px;
+   
+}
+
+fieldset{
+    background-color: rgba(14, 13, 13, 0.87);
+    margin-bottom:  50px;
+    
+}
+
+h1{
+    background-color: rgb(209, 40, 158);
+    text-align: center;
+    color: black;
+    font-size: 50px;
+    font-weight: 900;
+    border: black solid 2px;
+}
+
+button{
+    font-family: 'Bona Nova', serif;
+    font-size: 20px;
+    margin: 10px;
+    border-radius: 25px;
+    border-color: rgb(233, 131, 228) 
+}
+
+input{
+    font-family: 'Bona Nova', serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+select{
+    font-family: 'Bona Nova', serif;
+    font-size: 20px;
+    margin: 10px;
+}
+
+legend{
+    font-size: 30px;
+    color: rgb(209, 40, 158);
+    background-color: rgb(14, 13, 13);
+    padding: 5px;
+      
+}
+
+.sublegend{
+    font-size: 22px;
+    color: white;
+}
+
+.subfieldset{
+    background-color: transparent;
+    height: 730px;}
+
+
+.qrcode{
+    width: 150px;
+    position: relative;
+    left: 70%;
+    bottom: 200px;
+}
+
+.labelimg{
+    position: relative;
+    left: 46%;
+    bottom: 160px;
+}
+
+.pedido{
+    padding: 20px;
+    height: 900px;
+}
+
+.pagamento{
+    padding: 20px;
+    height: 330px;
+}
+
+.entrega{
+    padding: 20px;
+}
+
+#qtdadestradicionais{
+    width: 40px;
+}
+
+#qtdinterncionais{
+    width: 40px;
+}
+
+#nome{
+    width: 400px;
+}
+
+#recebedor{
+    width: 400px;
+}
+#codigo{
+    width:40px
+}
+#address{
+    width: 400px;
+}
+#numero{
+    width: 90px;
+}
+#complemento{
+    width: 110px;
+}
+
+.buttonpagamento{
+    position: relative;
+    bottom: 150px;
+}
+
+.massas{
+    width: 200px;
+    position: relative;
+    left: 90px;
+}
+
+.recheio{
+    width: 200px;
+    position: relative;
+    bottom: 330px;
+    left: 60%;
+}
+
+.buttonbolo{
+    position: relative;
+    left: 40%;
+    bottom: 230px;
+}
+
