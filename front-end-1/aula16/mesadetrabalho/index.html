@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesa de Trabalho - Aula 16</title>
+
+    <style>
+        h1{
+            color:chartreuse;
+            background-color:rgb(34, 61, 6);
+            text-align: center;
+        }
+
+        h1:hover{
+            color: cyan;
+            background-color: rgb(11, 78, 78);
+            text-align: right;
+            transition: 5s;
+        }
+
+        p{
+           color: coral; 
+        }
+
+        p::first-letter{
+            font-size: 430%;
+            color: cornflowerblue;
+        }
+       
+        input:focus{
+            border: 3px solid red;
+        }
+
+        input:checked + label{
+            border:black 2px dotted ;
+        }
+
+        div:nth-child(odd){
+            color: indigo;
+            font-weight: 800;
+        }
+
+        #estadoCivil:disabled{
+            background-color: rgba(41, 41, 41, 0.404) ;
+        }
+        input:enabled{
+            background-color: rgba(0, 0, 128, 0.219);
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Fazendo hover</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus nam minus consequatur sit incidunt officia.</p>
+    </div>
+
+    <form>
+        <div class="nome">
+            <label for="nome">Nome</label>
+            <input type="text" maxlength="30" id="nome" name="nome" placeholder="Conforme impresso no cartão">  
+        </div>
+    
+        <div>
+            <label for="socialNumber">CPF</label>
+            <input type="text" id="socialNumber" name="socialNumber" placeholder="Sem traços e/ou pontos">
+        </div>
+    
+        <div>
+            <label for="vencimento">Data de Vencimento</label>
+            <input type="date" id="vencimento" name="vencimento">
+        </div>
+
+        <div>
+            <label for="estadoCivil">Estado Cívil</label>
+            <input type="estadoCivil" id="estadoCivil" name="estadoCivil" disabled>
+        </div>
+        
+        <div>
+            <input type="checkbox" id="pessoaFisica" name="pessoaFisica">
+            <label for="pessoaFisica">Pessoa Física</label>            
+        </div>
+
+    </form>
+    
+
+    
+</body>
+</html>
