@@ -1,0 +1,51 @@
+@keyframes bolafantasma {
+    0%{
+        opacity: 0;
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translate(500px);
+    }
+}
+
+img{
+    width:200px;
+    animation-name: bolafantasma;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+
+}
+
+.gato{
+    font-size: 90px;
+    text-align: center;
+}
+
+.gato:hover{
+    transform:skew(30deg) 
+              scale(1.8) 
+              rotate(180deg)
+              translate(20px,-20px);
+}
+
+
+
+button{
+    color: rgb(237, 239, 246);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 50px;
+    background-color: rgba(16, 7, 98, 0.801);
+    border-radius: 25px 2px;
+    border:rgb(77, 60, 230) 2px solid;
+    margin-top: 50px;   
+    
+}
+
+button:hover{
+    transition: 15s;
+    color: rgb(170, 96, 145);
+    background-color: rgba(230, 23, 230, 0.603);
+    border-radius: 25px 2px;
+    border:rgb(172, 38, 160) 2px solid;
+}
