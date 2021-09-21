@@ -5,16 +5,17 @@ body{
 }
 
 div{
-    display: flex;
-    justify-content: center;
-
-}
-main{
     width: 120vh;
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    justify-content: center;    
+    justify-content: center;
+}
+
+main{
+   
+    display: flex;
+    justify-content: center;   
 }
 
 img{
