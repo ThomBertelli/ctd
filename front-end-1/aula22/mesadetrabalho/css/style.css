@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Oswald:wght@500&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/front-end-1/aula22/mesadetrabalho/img/panoramica.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-areas:
+    'header'
+    'main'
+    'footer' ;    
+}
+
+h1{
+    background-color: rgb(219, 117, 33);
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-size: 40px;
+    text-align: center; 
+}
+
+main{
+    background-color: rgba(255, 255, 255, 0.801);
+    text-align:justify;
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px;
+}
+
+header{
+    grid-area: header;
+    
+}
+
+footer{
+    grid-area: footer;
+  
+}
+
+p{
+   
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+    margin: 40px;
+}
+
+.video{
+    margin: 0 auto;
+    width:auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;   
+}
+
+.curiosidades{
+    margin: 40px;
+}
+
+h2{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-weight: bolder; 
+}
+
+ul{ 
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 25px;
+}
+
+a{
+   font-size: 50px;
+   color: white; 
+   margin-left: 40px;
+}
+
+.creditos{
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
+    text-align: right;
+    font-weight: bolder;
+    color: white;
+    background-color: black;
+    padding-right: 15px;
+
+}
+
+@media (max-width:768px){
+    body{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    main{
+        font-size: 20px; 
+    }
+    
+    footer{
+        margin: 0px;
+        padding: 0px;
+    }
+
+    footer a{
+        font-size: 30px;
+    }
+
+    footer a i {
+        padding: 0px 0px 30px 0px
+    }
+
+    
+    .creditos{
+        margin: 0px;
+        padding-right: 10px;
+    }
+
+    .video iframe{
+        width: auto;
+        height: auto;
+        padding: 0;
+    }   
+}
+
+@media (max-width: 425px){
+    body{
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    header{
+       padding: 0px;
+        
+    }
+
+    main{
+        font-size: 20px;
+        margin: 0px;
+           
+    }
+
+    h1{
+        font-size: 30px;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    footer{
+        margin-top:10px;
+        padding-right: 0px;
+    }
+
+    footer a{
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    footer a i {
+        padding: 0px 0px 10px 10px
+        
+    }
+
+    .creditos{
+        font-size: 12px;
+        margin: 0px;
+        padding-right: 10px;   
+    }
+
+    .video iframe{
+        width: auto;
+        height: auto;
+        padding: 0;
+    }   
+}
