@@ -1,0 +1,94 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth
+}
+
+body{
+    background-color: black;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+main{
+    display: grid;
+    grid-template-areas:
+    'banner banner'
+    'artigo1 artigo2'
+    'footer footer' ;
+    gap: 5rem;
+}
+
+header{
+    text-align: center;
+    color:rgb(0, 0, 0);
+    position: sticky;
+    top:0;
+    z-index: 2;
+    background-color: rgb(255, 255, 255);   
+}
+
+h1{
+    font-size: 3.5rem;
+    padding-bottom: 1.8rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 2rem;
+    border: black solid 1px;
+    padding: 5px;
+}
+
+ul li{
+    padding: 1rem;
+}
+
+section{
+    text-align: justify;
+    height: 100%;
+}
+
+#banner{
+    height:100vh;
+    background-image: url("https://picsum.photos/800/500?random=9");
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: banner;
+}
+
+h2{
+    color: white;
+    font-size: 2.5rem;
+}
+
+#artigo1{
+    grid-area: artigo1;
+    margin-left: 5rem;
+    color:white;
+    font-size: 2rem;
+}
+
+#artigo2{
+    grid-area: artigo2;
+    margin-right: 5rem;
+    color:white;
+    font-size: 2rem;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
